@@ -29,11 +29,17 @@ button.addEventListener("click", function (event) {
         const img = document.createElement('img');
         const p = document.createElement('p');
         const iframe = document.createElement('iframe');
+        console.log(movie);
         remover.push(p, img, iframe);
         const trailers = movieData.data.videos.results.filter((trailer) => trailer.type === "Trailer");
         iframe.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
         img.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-        p.innerHTML = `${movie.title} -- ${movie.release_date} -- ${movie.popularity}`;
+        p.classList.add("title");
+        p.innerHTML = `Title: ${movie.title} <br> Release Date: ${movie.release_date} &nbsp Popularity: ${movie.popularity}
+        <br> Language: ${movie.original_language} &nbsp Vote: ${movie.vote_count} &nbsp Vote Average: ${movie.vote_average}
+        <br> Violence: ${movie.adult} &nbsp Intensive Language: ${movie.adult}
+        <br> Overview: ${movie.overview}
+        <br> ID: ${movie.id} &nbsp Backdrop Path: ${movie.backdrop_path} &nbsp Poster Path: ${movie.poster_path}`;
         document.body.append(p);
         document.body.append(img);
         document.body.append(iframe);
