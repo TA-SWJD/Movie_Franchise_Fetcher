@@ -35,11 +35,11 @@ button.addEventListener("click", function (event) {
         iframe.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
         img.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
         p.classList.add("title");
-        p.innerHTML = `Title: ${movie.title} <br> Release Date: ${movie.release_date} &nbsp Popularity: ${movie.popularity}
+        p.innerHTML = `Title: ${movie.title} </br> <br> Release Date: ${movie.release_date} &nbsp Popularity: ${movie.popularity}
         <br> Language: ${movie.original_language} &nbsp Vote: ${movie.vote_count} &nbsp Vote Average: ${movie.vote_average}
         <br> Violence: ${movie.adult} &nbsp Intensive Language: ${movie.adult}
-        <br> Overview: ${movie.overview}
-        <br> ID: ${movie.id} &nbsp Backdrop Path: ${movie.backdrop_path} &nbsp Poster Path: ${movie.poster_path}`;
+        </br> <br> Overview: ${movie.overview}
+        </br> <br> ID: ${movie.id} &nbsp Backdrop Path: ${movie.backdrop_path} <br> Poster Path: ${movie.poster_path}`;
         document.body.append(p);
         document.body.append(img);
         document.body.append(iframe);
