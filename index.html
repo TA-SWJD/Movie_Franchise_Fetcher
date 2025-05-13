@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js" defer></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background" id="background">
+    <div id="cover">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/lordoftherings-1636391090.jpg?crop=0.5xw:1xh;center,top&resize=640:*" alt="The Lord of the Rings" width="25%" id="p1">
+      <img src="https://12ax7web.s3.amazonaws.com/accounts/1/products/imported/Star-Wars-Ships-t-shirt-Star-Wars-500x500.jpg" alt="Star Wars" width="25%" id="p2">
+      <img src="https://honeysanime.com/wp-content/uploads/2016/06/Harry-Potter-movie-Wallpaper-500x500.jpg" alt="HarryPotter" width="25%" id="p3">
+      <img src="https://media.aintitcool.com/media/uploads/2019/prometheus/el-camino-poster.jpg" alt="EI Camino" width="25%" id="p4">
+    </div>
+  </div>
+  <div id="searchBox">
+    <form action="index.html" method="get">
+        <select name="select" id="movie" class="select">
+          <option value="None">None</option>
+          <option value="The Lord of the Rings">The Lord of the Rings</option>
+          <option value="Harry Potter">Harry Potter</option>
+          <option value="Resident Evil">Resident Evil</option>
+          <option value="Breaking Bad">Breaking Bad</option>
+          <option value="Spiderman">Spiderman</option>
+          <option value="Star Wars">Star Wars</option>
+          <option value="The Avengers">The Avengers</option>
+          <option value="The Godfather">The Godfather</option>
+          <option value="Terminator">Terminator</option>
+          <option value="Alien">Alien</option>
+        </select>
+      <button class="button" type="submit" id="get">Get</button>
+    </form>
+  </div>
+</body>
+</html>
